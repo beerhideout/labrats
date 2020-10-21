@@ -1094,7 +1094,7 @@ function actionSafeMode() {
 }
 function actionLogout() {
     setcookie(md5($_SERVER['HTTP_HOST']), '', time() - 3600);
-	die("<meta http-equiv="refresh" content="1;URL='#'" />  <p>successfully exited.</p>");
+	die("<meta http-equiv='refresh' content='1;URL=#' />  <p>successfully exited.</p>");
 }
 function actionSelfRemove() {
 	if($_POST['p1'] == 'yes')
